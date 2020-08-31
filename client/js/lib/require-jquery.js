@@ -2470,7 +2470,7 @@ jQuery.extend({
 			return setTimeout( jQuery.ready, 1 );
 		}
 
-		// Mozilla, Opera and webkit nightlies currently support this event
+		// OBEYi, Opera and webkit nightlies currently support this event
 		if ( document.addEventListener ) {
 			// Use the handy event callback
 			document.addEventListener( "DOMContentLoaded", DOMContentLoaded, false );
