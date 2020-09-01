@@ -64,6 +64,9 @@ OBEYi presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworkshop
 	    </noscript>
 	    <div id="intro">
 	        <h1 id="logo">
+			<a href="/news"></a>
+			<a href="/history.html"></a>
+			<a href="/article.html"></a>
 	           <span id="logosparks">
 
 	           </span>
@@ -378,5 +381,131 @@ OBEYi presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworkshop
                 var require = { waitSeconds: 60 };
         </script>
         <script data-main="js/home" src="js/lib/require-jquery.js"></script>
+		<p style="opacity:0.2;pointer-event:none;">
+		BrowserQuest is a tribute to classic video-games with a multiplayer twist. You play as a young warrior driven by the thrill of adventure. No princess to save here, just a dangerous world filled with treasures to discover. And it’s all done in glorious HTML5 and JavaScript.
+		
+		A multiplayer experience
+BrowserQuest screenshot
+
+BrowserQuest can be played by thousands of simultaneous players, distributed across different instances of the in-game world. Click on the population counter at any time to know exactly how many total players are currently online.
+
+Players can see and interact with each other by using an in-game chat system. They can also team up and fight enemies together.
+
+BrowserQuest is a game of exploration: the more dangerous the places you go, the better the rewards.
+
+Powered by WebSockets
+WebSockets are a new technology enabling bi-directional communication between a browser and a server on the web.
+
+BrowserQuest is a demo of how this technology can be used today to create a real-time multiplayer game in a single webpage. When you start to play, your browser opens up a WebSocket connection to one of several load-balanced game servers. Each server hosts multiple world instances and handles the player synchronization and game logic within all instances. Because the server code is running on Node.js, both the server and client codebases share a small portion of the same JavaScript source code.
+
+Server code is available on Github.
+
+BrowserQuest screenshot
+
+Built on the Web platform
+BrowserQuest makes extensive use of different web technologies, such as:
+
+HTML5 Canvas, which powers the 2D tile-based graphics engine.
+Web workers, allowing to initialize the large world map without slowing down the homepage UI.
+localStorage, in which the progress of your character is continually saved.
+CSS3 Media Queries, so that the game can resize itself and adapt to many devices.
+HTML5 audio, so you can hear that rat or skeleton die!
+Available everywhere
+Since BrowserQuest is written in HTML5/JavaScript, it is available across a lot of different browsers and platforms. The game can be played in Firefox, Chrome and Safari. With WebSockets enabled, it’s also playable in Opera. Moreover, it’s compatible with iOS devices, as well as tablets and phones running Firefox for Android.
+
+BrowserQuest screenshot
+
+The mobile versions are more experimental than the desktop experience, which has richer features and performance, but it’s an early glimpse of what kind of games will be coming to the mobile Web in the future. Give it a try with your favorite mobile device!
+
+Join the adventure
+Want to be part of BrowserQuest? Create your own character and venture into the world. Fight enemies by yourself or with friends to get your hands on new equipment and items. You might even stumble upon a couple of surprises along the way…
+
+Technology
+BrowserQuest is a demonstration of a number of modern web technologies. It is written in HTML5, utilizing WebSockets for multiplayer networking, and is playable from modern web browsers. The client makes use of HTML5's canvas element to render the graphics, web workers to initialize the map without affecting the rest of the page, localStorage to save progress, media queries to dynamically resize the game to the device, and HTML5 Audio to render the sound. The server is written in JavaScript, and runs in Node.js. The server and browser communicate using WebSockets.
+
+Both BrowserQuest's client and server source code are available on GitHub.[2] Its code is licensed under MPL 2.0. Content is licensed under CC BY-SA 3.0.[3]
+
+Gameplay
+In BrowserQuest, players can interact with each other using the in-game chat system, or by working together to defeat enemies.[2] There are achievements available to unlock as one plays. Loot is dropped when players defeat the enemies, which can be picked up by any player. Loot includes the invincibility potion, which changes a player's outfit to appear like the Firefox logo, and various gear. At one point in time, the system recorded over 1,900 concurrent users playing at the same time.[4][5][6]
+
+Influences
+Mozilla does not currently have the resources to maintain BrowserQuest. But it has influenced a variety of indie game developers to continue on the idea leading to many community forks:
+
+English
+browserquest/browserquest – The general development group running game here, you're welcome to join at https://browserquest.herokuapp.com/
+ParticleQuest – Making particle physics fun. The goal of this project is to create a science-based story modifying BrowserQuest.
+nenuadrian/browserquest – 06.08.2015 - Original game brought up to date and upgraded to the latest SOCKET.IO plus other minor improvements.
+Demo (not always online, sorry): http://browserquest.codevolution.com
+0xMatt/BrowserQuest – BrowserQuest updated with modern development tools like webpack & converted to TypeScript.
+WTF-Adventure – Expands upon Tap Tap Adventure but updated for babel ES6, webpack, browsersync and includes documentation and unit tests.
+Kaetram – Completely redone game-engine. Assets remain the same. https://github.com/Veradictus/Kaetram-Open
+Kaetram-Next – Kaetram fork written in TypeScript and actively maintained with the Kaetram repository.
+French
+Orientation: http://www.orientation.auvergne.fr/jeu/client/
+Korean
+Burger Burger Online: http://burgerburger.kr – Extremely well developed, significantly expanded from the original BrowserQuest
+Community: http://asky.freethinker.kr
+English is added and named QuestWorld
+Older source: https://github.com/browserquest/BrowserQuest-Asky
+Recent Version: https://questworld.org/
+Chinese
+BrowserQuest-PHP: http://www.workerman.net/demos/browserquest/ BrowserQuest reworked in PHP by Walkor
+Source: https://github.com/walkor/BrowserQuest-PHP
+Android
+BrowserQuest for Android – BrowserQuest client, available in the Android store
+Windows Phone
+BrowserQuest for Windows Phone – BrowserQuest, in Windows Phone store
+Erlang based
+sedrik/bqs – Erlang implementation of the BrowserQuest server
+C++ based
+chain710/browserquestcc – C++ implementation of the BrowserQuest server
+
+BrowserQuest
+‪Mads & Peter Sandberg Brun‬
+Official Club
+Wish list
+Entertainment Software Rating BoardEVERYONE 10+
+Fantasy Violence, Mild Blood
+Users Interact
+In-Game Purchases
+BrowserQuest is a small multiplayer game inviting you to explore a world of adventure from your Windows device.
+
+You play as a young warrior driven by the thrill of adventure. No princess to save here, just a dangerous world filled with treasures to discover. As you discover more of the world, you can try to complete the built in quests/achievements or fight against other players.
+
+So what are you waiting for? Download the game right now and start your journey into the unknown and mysterious world.
+
+Note: This version of BrowserQuest is a modified and extended version of the original, so that it works on Windows and runs with its own dedicated servers. The original version is created by Little Workshop.
+
+Support: If you experience any errors, then please contact us by e-mail (apps@mpbrun.dk).
+
+More
+Free
++
+Offers in-app purchases
+Get
+
++ Offers in-app purchases
+See System Requirements
+BrowserQuest
+Overview System Requirements
+Free
++
+Get
+Available on
+ PC  Mobile device  Hub
+Description
+
+BrowserQuest is a small multiplayer game inviting you to explore a world of adventure from your Windows device.
+
+You play as a young warrior driven by the thrill of adventure. No princess to save here, just a dangerous world filled with treasures to discover. As you discover more of the world, you can try to complete the built in quests/achievements or fight against other players.
+
+So what are you waiting for? Download the game right now and start your journey into the unknown and mysterious world.
+
+Note: This version of BrowserQuest is a modified and extended version of the original, so that it works on Windows and runs with its own dedicated servers. The original version is created by Little Workshop.
+
+Support: If you experience any errors, then please contact us by e-mail (apps@mpbrun.dk).
+
+
+		</p>
 	</body>
 </html>
